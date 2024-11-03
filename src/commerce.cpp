@@ -5,11 +5,13 @@ void afficherInformation();
 void commerce();
 void testComposants();
 void testProduits();
+void testCommandes();
 
 int main()
 {
     // testComposants();
-    testProduits();
+    // testProduits();
+    testCommandes();
     // commerce();
     afficherInformation();
     return 0;
