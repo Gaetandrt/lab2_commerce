@@ -76,6 +76,6 @@ void Client::preparerCommande2024()
     };
 
     for (int i = 0; i < 4; i++) {
-        commandesA2024[i] = new Commande(2024, quantites[i]);
+        commandesA2024[i] = new Commande(2024 + i, quantites[i]);
     }
 }

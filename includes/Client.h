@@ -30,11 +30,11 @@ class Client
         void consommerProduits();
 
         inline friend std::ostream &operator<<(std::ostream &os, const Client &client) {
-            os << "----------------------------------------" << std::endl
+            os << "----------------------------------------------" << std::endl
                << "CLIENT" << std::endl
                << " Nom : " << client.nom << std::endl
                << " Seuil de qualite : " << client.seuilQualite << std::endl
-               << "----------------------------------------" << std::endl;
+               << "----------------------------------------------" << std::endl;
             return os;
         }
 

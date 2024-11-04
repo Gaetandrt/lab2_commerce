@@ -44,14 +44,14 @@ void afficherInformation()
 {
     std::cout << std::endl << std::endl;
     std::cout << std::endl
-         << "-------------------------------" << std::endl
-         << " NB constructeurs : " << Compteur::getNbConstructeurs() << std::endl
-         << " NB constructeurs copie : " << Compteur::getNbConstructeursCopie() << std::endl
-         << " NB destructeurs : " << Compteur::getNbDestructeurs()
-         << std::endl;
+              << "----------------------------------------------" << std::endl
+              << " NB constructeurs : " << Compteur::getNbConstructeurs() << std::endl
+              << " NB constructeurs copie : " << Compteur::getNbConstructeursCopie() << std::endl
+              << " NB destructeurs : " << Compteur::getNbDestructeurs()
+              << std::endl;
     std::cin.get();
 }
-    
+
 void commerce()
 {
     Entreprise entreprise;

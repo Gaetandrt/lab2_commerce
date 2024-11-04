@@ -17,11 +17,11 @@ class Commande
             for (int i = 0; i < 5; ++i) {
                 quantiteProduits += (" - Produit demande {" + std::to_string(i) + "} --> " + std::to_string(commande.quantiteProduits[i]) + "\n");
             }
-            return flux << "--------------------------------\n"
+            return flux << "----------------------------------------------\n"
                         << "COMMANDE\n"
                         << " No de commande : " << commande.noCommande << "\n"
                         << quantiteProduits
-                        << "--------------------------------\n";
+                        << "----------------------------------------------\n";
         }
 
         inline int getQuantiteProduit(int idProduit) const {

@@ -22,7 +22,7 @@ class BonCommande
             {
                 quantiteProduits += " - Produit {" + std::to_string(i) + "} --> {commande:" + std::to_string(bonCommande.commande->getQuantiteProduit(i)) + "/recu:" + std::to_string(bonCommande.getQuantiteProduits(i)) + "}\n";
             }
-            os << "----------------------------------------" << std::endl
+            os << "----------------------------------------------" << std::endl
                << "BON DE COMMANDE" << std::endl
                << " Bon de commande : " << bonCommande.idBonCommande << std::endl
                << " No de commande : " << bonCommande.commande->getNoCommande() << std::endl

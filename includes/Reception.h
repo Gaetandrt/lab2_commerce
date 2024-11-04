@@ -30,11 +30,11 @@ class Reception
                 }
             }
 
-            os << "----------------------------------------" << std::endl
+            os << "----------------------------------------------" << std::endl
                << "RECEPTION" << std::endl
                << " Bon de commande : " << std::to_string(reception.bonCommande->getIdBonCommande()) << std::endl
                << receiveds
-               << "----------------------------------------" << std::endl;
+               << "----------------------------------------------" << std::endl;
             return os;
         }
 
