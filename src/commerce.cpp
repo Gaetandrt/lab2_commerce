@@ -6,12 +6,14 @@ void commerce();
 void testComposants();
 void testProduits();
 void testCommandes();
+void testInventaire();
 
 int main()
 {
     // testComposants();
     // testProduits();
-    testCommandes();
+    // testCommandes();
+    testInventaire();
     // commerce();
     afficherInformation();
     return 0;
