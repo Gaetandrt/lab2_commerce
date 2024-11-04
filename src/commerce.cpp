@@ -7,13 +7,15 @@ void testComposants();
 void testProduits();
 void testCommandes();
 void testInventaire();
+void testFournisseur();
 
 int main()
 {
     // testComposants();
     // testProduits();
     // testCommandes();
-    testInventaire();
+    // testInventaire();
+    testFournisseur();
     // commerce();
     afficherInformation();
     return 0;
