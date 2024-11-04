@@ -11,6 +11,7 @@ void testFournisseur();
 void testEntrepot();
 void testBonCommande();
 void testReception();
+void testClient();
 
 int main()
 {
@@ -21,9 +22,11 @@ int main()
     // testFournisseur();
     // testEntrepot();
     // testBonCommande();
-    testReception();
+    //testReception();
+    testClient();
     // commerce();
     afficherInformation();
+    system("leaks main");
     return 0;
 }
 

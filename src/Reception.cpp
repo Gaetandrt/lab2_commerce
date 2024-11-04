@@ -1,6 +1,7 @@
 #include "Reception.h"
 #include "Compteur.h"
 
+
 Reception::Reception(BonCommande *bonCommande) : bonCommande(bonCommande) {
     Compteur::ajouterConstructeur();
 }
@@ -26,9 +27,9 @@ void Reception::ajouterProduit(Produit *produit, int idProduit)
     produits[idProduit].push_back(produit);
 }
 
-Commande *Reception::getCommande() const
+BonCommande *Reception::getBonCommande() const
 {
-    return bonCommande->getCommande();
+    return bonCommande;
 }
 
 int Reception::getQuantiteProduitsRecus(int idProduit) const

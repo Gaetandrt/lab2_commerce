@@ -14,7 +14,7 @@ class Reception
 
         void ajouterProduit(Produit *produit, int idProduit);
 
-        Commande *getCommande() const;
+        BonCommande *getBonCommande() const;
         int getQuantiteProduitsRecus(int idProduit) const;
         std::list<Produit *> getProduits(int idProduit) const;
 
