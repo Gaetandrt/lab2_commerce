@@ -9,6 +9,7 @@ void testCommandes();
 void testInventaire();
 void testFournisseur();
 void testEntrepot();
+void testBonCommande();
 
 int main()
 {
@@ -17,7 +18,8 @@ int main()
     // testCommandes();
     // testInventaire();
     // testFournisseur();
-    testEntrepot();
+    // testEntrepot();
+    testBonCommande();
     // commerce();
     afficherInformation();
     return 0;
