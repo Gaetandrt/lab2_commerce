@@ -30,16 +30,6 @@ BonCommande::~BonCommande()
     Compteur::ajouterDestructeur();
 }
 
-int BonCommande::getQuantiteProduits(int idProduit) const
-{
-    if (idProduit < 0 || idProduit > 4)
-    {
-        return 0;
-    }
-
-    return quantiteProduits[idProduit];
-}
-
 void BonCommande::ajouterProduits(int quantite, int idProduit)
 {
     if (idProduit < 0 || idProduit > 4)
@@ -48,14 +38,4 @@ void BonCommande::ajouterProduits(int quantite, int idProduit)
     }
 
     quantiteProduits[idProduit] += quantite;
-}
-
-Commande *BonCommande::getCommande() const
-{
-    return commande;
-}
-
-int BonCommande::getIdBonCommande() const
-{
-    return idBonCommande;
 }

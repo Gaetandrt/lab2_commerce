@@ -14,9 +14,18 @@ class Reception
 
         void ajouterProduit(Produit *produit, int idProduit);
 
-        BonCommande *getBonCommande() const;
-        int getQuantiteProduitsRecus(int idProduit) const;
-        std::list<Produit *> getProduits(int idProduit) const;
+        inline BonCommande *getBonCommande() const
+        {
+            return bonCommande;
+        }
+        inline int getQuantiteProduitsRecus(int idProduit) const
+        {
+            return produits[idProduit].size();
+        }
+        inline std::list<Produit *> getProduits(int idProduit) const
+        {
+            return produits[idProduit];
+        }
 
         inline friend std::ostream &operator<<(std::ostream &os, const Reception &reception)
         {

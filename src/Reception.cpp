@@ -26,18 +26,3 @@ void Reception::ajouterProduit(Produit *produit, int idProduit)
         return;
     produits[idProduit].push_back(produit);
 }
-
-BonCommande *Reception::getBonCommande() const
-{
-    return bonCommande;
-}
-
-int Reception::getQuantiteProduitsRecus(int idProduit) const
-{
-    return produits[idProduit].size();
-}
-
-std::list<Produit *> Reception::getProduits(int idProduit) const
-{
-    return produits[idProduit];
-}

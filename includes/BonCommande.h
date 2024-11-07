@@ -11,9 +11,22 @@ class BonCommande
         ~BonCommande();
 
         void ajouterProduits(int quantite, int idProduit);
-        int getQuantiteProduits(int idProduit) const;
-        Commande *getCommande() const;
-        int getIdBonCommande() const;
+        inline int getQuantiteProduits(int idProduit) const
+        {
+            if (idProduit < 0 || idProduit > 4)
+            {
+                return 0;
+            }
+            return quantiteProduits[idProduit];
+        }
+        inline Commande *getCommande() const
+        {
+            return commande;
+        }
+        inline int getIdBonCommande() const
+        {
+            return idBonCommande;
+        }
 
         inline friend std::ostream &operator<<(std::ostream &os, const BonCommande &bonCommande)
         {

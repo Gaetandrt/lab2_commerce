@@ -34,11 +34,6 @@ Entrepot::~Entrepot()
     }
 }
 
-int Entrepot::getQuantiteComposants(int idComposant)
-{
-    return composants[idComposant].size();
-}
-
 Composant *Entrepot::recupererComposant(int idComposant)
 {
     if (composants[idComposant].empty())

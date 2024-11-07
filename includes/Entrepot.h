@@ -14,7 +14,9 @@ class Entrepot
         void ajouterComposants(std::list<Composant *> composants, int idComposant);
         void ajouterComposant(Composant *composant, int idComposant);
         Composant *recupererComposant(int idComposant);
-        int getQuantiteComposants(int idComposant);
+        inline int getQuantiteComposants(int idComposant) const {
+            return composants[idComposant].size();
+        }
 
     private:
         std::list<Composant *> composants[5];
