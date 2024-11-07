@@ -28,13 +28,6 @@ int main()
     // testClient();
 
     commerce();
-
-    // Entreprise *entreprise = new Entreprise();
-    // delete entreprise;
-
-    // RapportAssuranceQualite *rapport = new RapportAssuranceQualite();
-    // delete rapport;
-
     afficherInformation();
     system("leaks main");
     return 0;

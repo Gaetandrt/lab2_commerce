@@ -1,5 +1,6 @@
 #include "Produits/ProduitA.h"
 #include "Compteur.h"
+
 ProduitA::ProduitA() : Produit("PRODUIT A") {
     Compteur::ajouterConstructeur();
 }
